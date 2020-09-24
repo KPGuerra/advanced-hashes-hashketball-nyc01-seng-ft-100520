@@ -177,6 +177,7 @@ def player_numbers(team_name)
   numbers_array = []
   game_hash.find do |location, teams|
     if teams[:team_name] == team_name
-      teams.collect
+      teams.find do |team_info, data|
+        data.collect
     
 
