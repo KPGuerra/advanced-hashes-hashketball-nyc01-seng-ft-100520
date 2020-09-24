@@ -196,5 +196,6 @@ def player_stats(name)
 end 
 
 def big_shoe_rebounds
-  
+  game_hash_find do |location, teams|
+    
 
