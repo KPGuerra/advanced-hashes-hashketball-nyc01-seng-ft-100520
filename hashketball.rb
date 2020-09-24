@@ -178,6 +178,14 @@ def player_numbers(team_name)
   game_hash.find do |location, teams|
     if teams[:team_name] == team_name
       teams.find do |team_info, data|
-        data.collect do |player
+        data.collect do |player_stats|
+          numbers_array << player_stats[:number]
+        end 
+      end
+    end
+  end
+  numbers_array
+end
+
     
 
