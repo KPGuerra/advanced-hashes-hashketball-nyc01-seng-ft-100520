@@ -191,6 +191,7 @@ def player_stats(name)
       if data[:player_name] == name
         data.each_with_object do |key, value, hash|
           hash[name] = {key => value}
+        end 
       end
     end
   end
