@@ -198,7 +198,6 @@ end
 def big_shoe_rebounds
   game_hash.find do |location, teams|
     teams[:players].each do |data|
-      binding.pry
       if data[:shoe].max
         binding.pry
         return data[:rebounds]
