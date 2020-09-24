@@ -196,7 +196,7 @@ def player_stats(name)
 end 
 
 def big_shoe_rebounds
-  players = game_hash[:home][:players].merge(game_hash[:away][:players])
+  players = game_hash[:home][:players].concat(game_hash[:away][:players])
   binding.pry
 end
 
