@@ -198,6 +198,7 @@ end
 def big_shoe_rebounds
   shoe_array = []
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
-  players.each do |
+  players.each do |player_stats|
+    shoe_array << player_stats[:shoe]
 end
 
