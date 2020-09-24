@@ -159,11 +159,8 @@ end
 
 def team_colors(team_name)
   game_hash.find do |location, teams|
-    binding.pry
     if teams[:team_name] == team_name
-      binding.pry
       return teams[:colors].to_a
-      binding.pry
     end
   end
 end 
