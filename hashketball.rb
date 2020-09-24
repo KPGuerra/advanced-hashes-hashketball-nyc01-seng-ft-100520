@@ -186,12 +186,11 @@ def player_numbers(team_name)
 end
 
 def player_stats(name)
-  player_stats = {}
   game_hash.find do |location, teams|
     teams[:players].each do |data|
-      binding.pry
       if data[:player_name] == name
-        player_stats << data
+        data.each_with_object do |key, value, hash|
+          hash[name] = {key => value}
       end
     end
   end
