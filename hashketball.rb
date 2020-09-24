@@ -196,11 +196,7 @@ def player_stats(name)
 end 
 
 def big_shoe_rebounds
-  game_hash.each do |location, teams|
-    teams[:players].each do |data|
-      if data[:shoe].max
-        binding.pry
-        return data[:rebounds]
+  game_hash[:home][:players].merge(game_hash[:away][:players])
       end
     end
   end
