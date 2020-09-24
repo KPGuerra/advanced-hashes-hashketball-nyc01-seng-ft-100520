@@ -190,7 +190,7 @@ def player_stats(name)
   game_hash.find do |location, teams|
     teams[:players].find do |data|
       if data[:player_name] == name
-        return player_hash = {data}
+        return data
       end
     end
   end
