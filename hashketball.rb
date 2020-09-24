@@ -168,5 +168,6 @@ end
 def team_names
   team_array = []
   game_hash.collect do |location, teams|
+    team_array = []
     
 
