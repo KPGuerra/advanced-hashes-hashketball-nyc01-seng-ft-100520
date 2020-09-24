@@ -196,7 +196,6 @@ def player_stats(name)
 end 
 
 def big_shoe_rebounds
-  shoe_array = []
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
   players.max do |player_stats|
     if player_stats[:shoe]
