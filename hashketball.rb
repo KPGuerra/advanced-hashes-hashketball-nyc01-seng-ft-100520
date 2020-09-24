@@ -162,6 +162,7 @@ def team_colors(team_name)
     if teams == team_name
       binding.pry
       return teams[:colors].to_a
+      binding.pry
     end
   end
 end 
