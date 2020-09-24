@@ -201,8 +201,6 @@ def big_shoe_rebounds
   players.max do |player_stats|
     player_stats[:shoe]
     return player_stats[:rebounds]
-    end
-    
   end
 end
 
