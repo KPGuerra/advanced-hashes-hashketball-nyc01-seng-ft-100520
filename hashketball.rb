@@ -199,7 +199,7 @@ def big_shoe_rebounds
   shoe_array = []
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
   players.max do |player_stats|
-    player_stats[:shoe]
+    if player_stats[:shoe]
     return player_stats[:rebounds]
   end
 end
