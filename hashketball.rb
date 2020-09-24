@@ -200,7 +200,6 @@ def big_shoe_rebounds
   players.max do |player_stats|
     player_stats[:shoe]
     end
-    binding.pry
-  end
+  binding.pry
 end
 
