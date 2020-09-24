@@ -200,5 +200,6 @@ def big_shoe_rebounds
   players.max_by do {|player_stats| player_stats[:shoe]}
     player_stats[:rebounds]
     end
+  end
 end
 
