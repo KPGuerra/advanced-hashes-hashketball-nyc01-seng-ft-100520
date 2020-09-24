@@ -170,6 +170,7 @@ def team_names
   game_hash.collect do |location, teams|
     team_array << teams[:team_name]
   end
+  team_array
 end 
     
 
