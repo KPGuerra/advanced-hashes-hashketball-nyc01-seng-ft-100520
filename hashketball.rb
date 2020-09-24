@@ -167,7 +167,7 @@ end
 
 def team_names
   game_hash.collect do |location, teams|
-    teams[:team_name].to_a
+    return teams[:team_name].to_a
   end
 end 
     
