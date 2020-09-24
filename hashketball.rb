@@ -202,5 +202,6 @@ def big_shoe_rebounds
     if player_stats[:shoe]
     return player_stats[:rebounds]
   end
+  end
 end
 
